@@ -20,4 +20,9 @@ public class BoxBehaviour : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    void OnDestroy()
+    {
+        SceneEvents.Events.BoxDestroyed(gameObject);
+    }
 }

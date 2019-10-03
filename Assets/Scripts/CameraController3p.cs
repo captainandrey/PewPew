@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraController3p : MonoBehaviour
 {
-
     public float RotationSpeed = 1;
     public Transform Target, Player;
     float mouseX, mouseY;
@@ -21,11 +20,6 @@ public class CameraController3p : MonoBehaviour
     void LateUpdate()
     {
         MoveCamera();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void MoveCamera()
