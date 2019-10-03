@@ -31,7 +31,7 @@ public class CameraController3p : MonoBehaviour
     void MoveCamera()
     {
         mouseX += Input.GetAxis(mouseXName) * RotationSpeed;
-        mouseY -= Input.GetAxis(mouseYName) * RotationSpeed;
+        mouseY += Input.GetAxis(mouseYName) * RotationSpeed;
         mouseY = Mathf.Clamp(mouseY, -35, 60);
 
         transform.LookAt(Target);
