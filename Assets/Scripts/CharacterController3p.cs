@@ -38,8 +38,6 @@ public class CharacterController3p : MonoBehaviour
         }
         rb.velocity = new Vector3(0, y, 0);
 
-
-
         transform.Translate(movement, Space.Self);
 
     }
