@@ -19,6 +19,11 @@ public class CameraController3p : MonoBehaviour
 
     void LateUpdate()
     {
+        
+    }
+
+    void Update()
+    {
         MoveCamera();
     }
 

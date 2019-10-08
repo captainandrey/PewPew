@@ -29,14 +29,11 @@ public class CharacterController3p : MonoBehaviour
         var verticalInput = Input.GetAxis(VerticalAxisName);
         var movement = new Vector3(horizontalInput, 0f, verticalInput).normalized * Speed * Time.deltaTime;
 
-
         //JUMP
-        var y = rb.velocity.y;
         if (Input.GetButtonDown(JumpName))
         {
-            y = JumpForce;
+            rb.velocity = new Vector3(0, JumpForce, 0);
         }
-        rb.velocity = new Vector3(0, y, 0);
 
         transform.Translate(movement, Space.Self);
 

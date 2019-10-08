@@ -7,7 +7,7 @@ public class SceneController : MonoBehaviour
 {
 
     List<GameObject> boxes;
-    public int BoxesToGenerate = 10;
+    public int BoxesToGenerate = 20;
     public GameObject BoxPrefab;
     int score = 0;
 
