@@ -25,7 +25,6 @@ public class SceneController : MonoBehaviour
     private void Events_OnBoxDestroyed(GameObject obj)
     {
         score++;
-        
     }
 
     // Update is called once per frame

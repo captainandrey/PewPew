@@ -16,8 +16,6 @@ public class SceneEvents : MonoBehaviour
 
     public void BoxDestroyed(GameObject box)
     {
-        
         OnBoxDestroyed?.Invoke(box);
-        
     }
 }

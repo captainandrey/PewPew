@@ -33,12 +33,10 @@ public class CameraController3p : MonoBehaviour
         mouseY += Input.GetAxis(mouseYName) * RotationSpeed;
         mouseY = Mathf.Clamp(mouseY, -35, 60);
 
-        
-
         Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
         Player.rotation = Quaternion.Euler(0, mouseX, 0);
 
-        transform.LookAt(Target);
+        //transform.LookAt(Target);
 
     }
 }
