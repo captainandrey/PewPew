@@ -39,11 +39,7 @@ public class SceneController : MonoBehaviour
 
         for (int i = 0; i < BoxesToGenerate; i++)
         {
-            //var color = Random.ColorHSV(0.2f, 0.8f, 0.5f, 1f, 0.5f, 1f, 0.7f, 0.7f);
-
             var newBox = Instantiate(BoxPrefab, new Vector3(Random.Range(-20, 20), Random.Range(2, 5), Random.Range(-20, 20)), Quaternion.Euler(90, 0, 0));
-            //newBox.GetComponent<Renderer>().material.color = color;
-
             boxes.Add(newBox);
         }
     }
