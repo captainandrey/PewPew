@@ -5,11 +5,12 @@ using UnityEngine;
 public class CharacterController3p : MonoBehaviour
 {
     public float Speed = 5;
-    public const string HorizontalAxisName = "Horizontal";
-    public const string VerticalAxisName = "Vertical";
-    public const string JumpName = "Jump";
-    Rigidbody rb;
+    const string HorizontalAxisName = "Horizontal";
+    const string VerticalAxisName = "Vertical";
+
     public float JumpForce = 5;
+    const string JumpName = "Jump";
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
